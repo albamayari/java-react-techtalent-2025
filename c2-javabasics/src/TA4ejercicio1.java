@@ -21,3 +21,4 @@ public class TA4ejercicio1 {
 	    // System.out.println(numero1 / numero2);
 	    // System.out.println(numero1 % numero2);
 	}
+}

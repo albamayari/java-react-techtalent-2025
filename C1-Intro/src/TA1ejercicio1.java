@@ -1,5 +1,5 @@
 
-public class ClaseInteger1 {
+public class TA1ejercicio1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
