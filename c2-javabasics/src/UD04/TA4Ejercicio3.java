@@ -1,5 +1,6 @@
+package UD04;
 
-public class T4Ejercicio3 {
+public class TA4Ejercicio3 {
 
 	public static void main(String[] args) {
 		// Declaración e inicialización de variables
