@@ -1,7 +1,7 @@
 package UD05;
 
 
-public class T5ejercicio2 {
+public class T5ejercicio02 {
 
     public static void main(String[] args) {
     	// Declara un String que contenga tu nombre, después muestra

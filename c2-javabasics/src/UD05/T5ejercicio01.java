@@ -1,6 +1,6 @@
 package UD05;
 
-public class T5ejercicio1 {
+public class T5ejercicio01 {
 
 	public static void main(String[] args) {
 		int variable1 = 3;
