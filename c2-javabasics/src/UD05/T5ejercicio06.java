@@ -9,6 +9,7 @@ public class T5ejercicio06 {
 		//Tenemos que tener el cuenta que el precio del producto puede tener decimales. Entonces, tenemos que usar la clase double envez de la clase int.
 		
 		//Paso 1: Importar la clase Scanner
+		//el import sismpre se ha de hacer antes de la clase principal es decir antesde poner public class T5ejercicio06 porque si no, no funcionará porque no reconocerá la clase Scanner.
 	
 		//Paso 2: Crear un objeto de la clase Scanner
 		Scanner sc = new Scanner(System.in); 
