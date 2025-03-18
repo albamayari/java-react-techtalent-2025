@@ -1,6 +1,6 @@
 package UD05;
 
-public class T5ejercicio8 {
+public class T5ejercicio08 {
 
 	public static void main(String[] args) {
 		// Este ejercicio me pide que haga el ejecio anterior(T5ejercicio7) pero con un bucle for en vez de un bucle while.
