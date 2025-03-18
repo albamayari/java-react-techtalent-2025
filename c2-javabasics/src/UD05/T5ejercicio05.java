@@ -1,3 +1,4 @@
+package UD05;
 import javax.swing.JOptionPane; // Importamos JOptionPane para usar cuadros de diálogo
 
 public class T5ejercicio05 {
