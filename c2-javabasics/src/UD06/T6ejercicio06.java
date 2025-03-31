@@ -1,43 +1,49 @@
 package UD06;
-//introduce un scaneer
+
 import java.util.Scanner;
-public class T6ejercicio06 {
-//este ejercicio me pide que: Crea una aplicación que nos cuente el número de cifras de un número entero positivo pedido por teclado.
-//Crea un método que realice esta acción, pasando el número por parámetro, devolverá el número de cifras.
-	public static void main(String[] args) {
-		// Paso 1: Pedir un número entero positivo al usuario
-		System.out.println("Introduce un número entero positivo: "); // Mostramos mensaje en consola
 
-		// Creamos un objeto Scanner para leer lo que el usuario escribe
-		Scanner sc = new Scanner(System.in);
-		int numero = sc.nextInt(); // Guardamos en la variable 'numero' el valor introducido por el usuario
-		sc.close(); // Cerramos el Scanner (buena práctica en Java cuando ya no lo usamos)
+public class T6ejercicio07 {
 
-		// Paso 2: Llamamos al método que cuenta las cifras
-		// Usamos un método que se llama contarCifras y devuelve un número entero
-		int resultado = contarCifras(numero); // Guardamos el resultado en la variable 'resultado'
+    public static void main(String[] args) {
+        // Este ejercicio me pide que: cree una aplicación que convierta una cantidad de euros a otra moneda (dólares, yenes o libras).
+        // El método que hace la conversión no debe devolver nada (void), solo mostrar el mensaje del resultado.
 
-		// Paso 3: Mostramos el resultado por pantalla
-		System.out.printf("El número %d tiene %d cifras.%n", numero, resultado);
-	}
+        // Paso 1: Pedimos la cantidad en euros
+        System.out.println("Introduce una cantidad de euros:");
+        Scanner sc = new Scanner(System.in); // Objeto para leer del teclado
+        double euros = sc.nextDouble(); // Guardamos la cantidad introducida
+        sc.nextLine(); // Limpiamos el salto de línea del buffer
 
-	// Paso 4: Método que cuenta las cifras de un número entero positivo
-	// Este método se llama 'contarCifras' y devuelve un valor de tipo int (número
-	// entero)
-	// El parámetro que recibe se llama 'numero' y es un número entero
-	public static int contarCifras(int numero) {
-		// Inicializamos la variable 'cifras' a 0
-		int cifras = 0;
+        // Paso 2: Pedimos la moneda de destino
+        System.out.println("Introduce la moneda a la que quieres convertir (dólares, yenes o libras):");
+        String moneda = sc.nextLine(); // Guardamos la moneda introducida
+        sc.close(); // Cerramos el Scanner
 
-		// Bucle que se repite mientras el número sea mayor que 0
-		// En cada repetición, dividimos el número por 10 y aumentamos 'cifras' en 1
-		while (numero > 0) {
-			numero /= 10; // Dividimos el número por 10 para quitar la última cifra
-			cifras++; // Aumentamos 'cifras' en 1
-		}
+        // Paso 3: Llamamos al método que hace la conversión
+        convertirDivisa(euros, moneda); // Le pasamos los dos datos: euros y la moneda
+    }
 
-		// Devolvemos el resultado al método main
-		return cifras;
-	
-	}
+    // Paso 4: Método que hace la conversión de euros a la moneda indicada
+    // Este método es void porque no devuelve ningún resultado, solo muestra el mensaje
+    public static void convertirDivisa(double euros, String moneda) {
+        double resultado = 0; // Aquí guardaremos el resultado de la conversión
+
+        // Convertimos la moneda a minúsculas para que no haya errores por mayúsculas
+        switch (moneda.toLowerCase()) {
+            case "dólares":
+                resultado = euros * 1.28611;
+                System.out.printf("%.2f euros son %.2f dólares.%n", euros, resultado);
+                break;
+            case "yenes":
+                resultado = euros * 129.852;
+                System.out.printf("%.2f euros son %.2f yenes.%n", euros, resultado);
+                break;
+            case "libras":
+                resultado = euros * 0.86;
+                System.out.printf("%.2f euros son %.2f libras.%n", euros, resultado);
+                break;
+            default:
+                System.out.println("Moneda no válida. Por favor, introduce 'dólares', 'yenes' o 'libras'.");
+        }
+    }
 }

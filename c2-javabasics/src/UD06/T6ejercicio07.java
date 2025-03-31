@@ -5,9 +5,13 @@ import java.util.Scanner;
 public class T6ejercicio07 {
 
 	public static void main(String[] args) {
-		// Este ejercicio me pide que: Crea un aplicación que nos convierta una cantidad de euros introducida por teclado a otra moneda, estas pueden ser a dolares, yenes o libras.
-		//El método tendrá como parámetros, la cantidad de euros y la moneda a pasar que sera una cadena, este no devolverá ningún valor, mostrara un mensaje indicando el cambio (void).
-		//El void es porque no devuelve ningún valor y esto sirve para mostrar un mensaje ya que no se necesita devolver nada. Si no se pone void, se espera que devuelva algo como un int o un boolean.
+		// Este ejercicio me pide que: Crea un aplicación que nos convierta una cantidad de euros introducida por teclado a otra moneda, 
+		// estas pueden ser a dolares, yenes o libras.
+		
+		//El método tendrá como parámetros, la cantidad de euros y la moneda a pasar que sera una cadena, este no devolverá ningún valor, 
+		// mostrara un mensaje indicando el cambio (void).
+		//El void es porque no devuelve ningún valor y esto sirve para mostrar un mensaje ya que no se necesita devolver nada. Si no se 
+		// pone void, se espera que devuelva algo como un int o un boolean.
 		//El cambio de divisas es: 1 euro = 1.28611 dólares, 1 euro = 129.852 yenes y 1 euro = 0.86 libras.
 		
 		// Paso 1: Pedir una cantidad de euros al usuario
@@ -24,7 +28,8 @@ public class T6ejercicio07 {
 		sc.close(); // Cerramos el Scanner (buena práctica en Java cuando ya no lo usamos)
 		
 		// Paso 3: Llamamos al método que hace la conversión
-		// Usamos un método que se llama convertirDivisa y no devuelve ningún valor (void). Este método recibe dos parámetros: la cantidad de euros y la moneda. 
+		// Usamos un método que se llama convertirDivisa y no devuelve ningún valor (void). Este método recibe dos parámetros: la cantidad 
+		// de euros y la moneda. 
 		// Este método mostrará un mensaje con el resultado en lugar de devolverlo. 
 		convertirDivisa(euros, moneda); // Llamamos al método y le pasamos los parámetros 'euros' y 'moneda'
 		
