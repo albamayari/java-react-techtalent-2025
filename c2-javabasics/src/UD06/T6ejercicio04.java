@@ -1,3 +1,4 @@
+package UD06;
 import java.util.Scanner; // Importamos la clase Scanner para poder leer datos desde el teclado
 
 // Declaramos la clase principal. Su nombre debe coincidir con el nombre del archivo.
