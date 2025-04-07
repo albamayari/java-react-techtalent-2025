@@ -28,10 +28,11 @@ public class T7ejercicio01 {
 		
 		// Paso 3: Pedimos los nombres y notas de los alumnos
 		for (int i = 0; i < cantidadAlumnos; i++) { // Bucle para pedir los datos de cada alumno
-			System.out.printf("Introduce el nombre del alumno %d: ", i + 1); // Pedimos el nombre del alumno
+			System.out.printf("Introduce el nombre del alumno %d: ", i + 1); // Pedimos el nombre del alumno. %d es un decimal (entero).
 			String nombreAlumno = sc.nextLine(); // Guardamos el nombre introducido
 
-			System.out.printf("Introduce la nota del alumno %s: ", nombreAlumno); // Pedimos la nota del alumno
+			System.out.printf("Introduce la nota del alumno %s: ", nombreAlumno); // Pedimos la nota del alumno.
+			//%s es un String.
 			double notaAlumno = sc.nextDouble(); // Guardamos la nota introducida
 			sc.nextLine(); // Limpiamos el salto de línea del buffer
 
