@@ -15,8 +15,8 @@ public T8ejercicio04() { //lo dejamos vacio porque es es contructor por defecto.
 }
 
  public T8ejercicio04(String titulo, String creador) {
-	this.titulo= titulo;
-	this.creador = "";
+	this.titulo= titulo; //se pone otra vez para que se guarde.
+	this.creador = creador;
  }
  
 public T8ejercicio04(String titulo, String creador, char ntemporadas, char genero ) {

@@ -18,11 +18,29 @@ this.color = "blanco";
 this.consumo = 'F'; // se pone solo un  '  porque es un char  y solo hay una letra/valor.
 this.peso = 5;
 
-
 	}
 	
 	//creamos un constructor para el precio y peso. 
 	
+ public T8ejercicio03 (double peso, int preciobase) { 
+	 //simpre ha de haver un constructor por defecto y ahora dentro de () ponemos lo que el usuario quiere o nos pide.
+	 
+	this.peso = peso; // el segundo peso es el nombre que le daremos al parametro.
+	//A indicar this en el primero dices que essta fura del general para el primer parametro.
+	this.preciobase = preciobase; 
 	
-
+ 
+ }
+//creamos un constructor todos los atributos
+ public T8ejercicio03 (double peso, int preciobase, char consumo, String color) { 
+	 
+	 
+	this.peso = peso; // el segundo peso es el nombre que le daremos al parametro.
+	//A indicar this en el primero dices que essta fura del general para el primer parametro.
+	this.preciobase = preciobase; 
+	this.consumo = consumo;
+	this.color = color; // tiene que ser el mismo nombre qu ele pones en el parametro es decir , el mismo numero que le pones dentro de los ()
+	
+ 
+ }
 }
