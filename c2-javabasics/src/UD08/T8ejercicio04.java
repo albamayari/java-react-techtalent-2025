@@ -12,6 +12,18 @@ public T8ejercicio04() { //lo dejamos vacio porque es es contructor por defecto.
  this.ntemporadas = 3;
  this.entregado = false;
  
+}
+
+ public T8ejercicio04(String titulo, String creador) {
+	this.titulo= titulo;
+	this.creador = "";
+ }
  
+public T8ejercicio04(String titulo, String creador, char ntemporadas, char genero ) {
+this.titulo= titulo;
+this.ntemporadas = ntemporadas;
+this.genero=genero;
+this.creador = creador;
+
 }
 }
