@@ -24,10 +24,74 @@ this.preciobase = preciobase;
 this.peso = peso;
 
 }
+
+//cramos un constructor con todos los atributos.
+public T9ejercicio01(int preciobase,String color, char consumoenergetico, double peso) {
+	this.preciobase = preciobase;
+	this.color = color;
+	this.consumoenergetico = consumoenergetico;
+	this.peso = peso;	
+}
+	
+//Metodos get de los atibutos- refiriendose a todos en general
+//el get se hace clickando a Source-- Generate Getters and Setters-- y selecionas todos ellos en este caso
+//Los getters y setters sirven para ver y cambiar los datos de un objeto que están protegidos.
+	//Los getters sirven para consultar un valor.
+	//Los setters sirven para modificar un valor.
+
+public int getPreciobase() {
+	return preciobase;
+}
+public void setPreciobase(int preciobase) {
+	this.preciobase = preciobase;
+}
+public String getColor() {
+	return color;
+}
+public void setColor(String color) {
+	this.color = color;
+}
+public char getConsumoenergetico() {
+	return consumoenergetico;
+}
+public void setConsumoenergetico(char consumoenergetico) {
+	this.consumoenergetico = consumoenergetico;
+}
+public double getPeso() {
+	return peso;
+}
+public void setPeso(double peso) {
+	this.peso = peso;
+}
+//Metodos get de los atibutos- comprobarConsumoEnergetico
+public void comprobarColor (String Comprobar) {  
+//se one void porque no devuelve nada y despues recuerda poner si es un char para saber como medirlo
+
+if (getColor().equalsIgnoreCase("blanco")) { //equalsIgnoreCase serveix per ignorar si s escribe en mayuscula o minuscula
+	
+}
+else if (getColor().equalsIgnoreCase("negro")) { //else if  par que si la condicion no es esa es la otra.
+	
+}
+if (getColor().equalsIgnoreCase("rojo")) {
+	
+}
+if (getColor().equalsIgnoreCase("azul")) { 
+	
+}
+if (getColor().equalsIgnoreCase("gris")) { 
+	
+}	
+}
+//Metodos get de los atibutos- 
+public void comprobarConsumoEnergetico(char Comprobar) {
+if (getConsumo().equalsIgnoreCase("A")) {
+	
+}
+}
+}
+
 }
  
-
-
-
 
 //"blanco","negro","rojo","azul","gris";
